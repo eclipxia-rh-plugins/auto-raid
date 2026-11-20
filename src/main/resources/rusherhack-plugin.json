@@ -3,7 +3,7 @@
   "Name": "${project.plugin_name}",
   "Version": "${project.plugin_version}",
   "Description": "Automatically drinks an Ominous Bottle when the raid victory boss bar appears",
-  "URL": "https://github.com/eclipxia/auto-raid",
+  "URL": "https://github.com/eclipxia-rh-plugins/auto-raid",
   "Authors": [
     "eclipxia"
   ],
