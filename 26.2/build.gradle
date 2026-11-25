@@ -89,11 +89,11 @@ tasks.register('runPlugin', JavaExec) {
 			args("--quickPlaySingleplayer", project.property("quickPlay"))
 		}
 
-		def rusherLoaderJarFile = project.layout.getProjectDirectory().file("lib/rusherhack-loader.jar").asFile
+		def rusherLoaderJarFile = rootProject.layout.projectDirectory.file("lib/rusherhack-loader.jar").asFile
 		if (!rusherLoaderJarFile.exists()) {
 			throw new GradleException("rusherhack-loader.jar must be copied to the lib directory!")
 		}
-		def rusherLoaderJarPath = project.layout.getProjectDirectory().file("lib/rusherhack-loader.jar").asFile.absolutePath
+		def rusherLoaderJarPath = rootProject.layout.projectDirectory.file("lib/rusherhack-loader.jar").asFile.absolutePath
 
 		jvmArgs(
 				"-Drusherhack.enablePlugins=true",
